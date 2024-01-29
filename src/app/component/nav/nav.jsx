@@ -45,9 +45,9 @@ export default function Nav() {
                     <h1 className="text-pink-600 py-2 text-2xl">
                         Intermitate Fasting Tracker,  <span ref={el} ></span>
                     </h1>
-                    <p>
+                    {/* <p>
                         Introducing our all-in-one Intermittent Fasting app designed to empower you on your wellness journey. With intuitive tracking, personalized plans, and expert guidance, we are here to make precision fasting accessible, enjoyable, and most importantly, effective. Elevate your health and redefine your lifestyle with us.
-                    </p>
+                    </p> */}
                 </div>
                 <button className="btn btn-primary btn-sm m-4" onClick={handleAddDataClick}>+ Add Data</button>
             </>
