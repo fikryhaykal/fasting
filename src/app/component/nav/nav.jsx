@@ -3,6 +3,7 @@ import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 import { useAtom } from "jotai";
 import {  editModeAtom, itemAtom } from "../atom/state";
+import Image from "next/image";
 
 export default function Nav() {
     const [dataItem, setDataItem] = useAtom(itemAtom);
@@ -11,7 +12,7 @@ export default function Nav() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['Make Your Goal Body', 'And Stay Healty'],
+            strings: ["Make Your Goal Body", "And Stay Healty"],
             typeSpeed: 50,
             loop: true,
         });
@@ -38,14 +39,7 @@ export default function Nav() {
                 </div>
                 <div className="flex-none gap-2">
                  
-                    <div className="dropdown dropdown-end">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                            <div className="w-10 rounded-full">
-                                <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                            </div>
-                        </div>
-                  
-                    </div>
+        
                 </div></div>
                 <div className="p-4 w-3/4">
                     <h1 className="text-pink-600 py-2 text-2xl">
